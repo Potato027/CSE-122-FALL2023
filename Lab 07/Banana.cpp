@@ -5,14 +5,20 @@ using namespace std;
 int main() {
     int k, n, w;
     cin >> k >> n >> w;
-
-
-    int totalCost = (w * (w + 1) / 2) * k;
-
-
-    int total = max(0, totalCost - n);
-
-    cout << Total << endl;
+    int sum  = 0;
+    for(int i=0;i<=w;i++)
+    {
+        sum +=k*i;
+    }
+    if(sum>n)
+    {
+        cout<<sum - n<<endl;
+    }
+    else
+    {
+        cout<<"0"<<endl;
+    }
+    
 
     return 0;
 }
