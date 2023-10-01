@@ -10,9 +10,9 @@ int main() {
     int totalCost = (w * (w + 1) / 2) * k;
 
 
-    int borrowAmount = max(0, totalCost - n);
+    int total = max(0, totalCost - n);
 
-    cout << borrowAmount << endl;
+    cout << Total << endl;
 
     return 0;
 }
